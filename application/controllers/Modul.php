@@ -109,41 +109,7 @@ class Modul extends CI_Controller {
 				move_uploaded_file ($tmp_file, $dir.$file_name);
 				date_default_timezone_get('Asia/Jakarta');
 				$source_url=$dir.$file_name;
-				//$info=getimagesize($source_url);
-				/* if ($ukuran < 300000 and $ukuran > 10000) {	
-					$quality=100;
-				}
-				elseif ($ukuran < 1000000 and $ukuran > 300000) {	
-					$quality=70;
-				}
-				elseif ($ukuran < 1500000 and $ukuran > 1000000) {	
-					$quality=50;
-				}
-				elseif ($ukuran < 2000000 and $ukuran > 1000000) {	
-					$quality=40;
-				}
-				elseif ($ukuran < 2500000 and $ukuran > 2000000) {	
-					$quality=30;
-				}
-				elseif ($ukuran < 3000000 and $ukuran > 2500000) {	
-					$quality=20;
-				}
-				elseif ($ukuran > 3000000) {	
-					$quality=10;
-				}else{
-					$quality=10;
-				}
-				$userfile = imagecreatefromjpeg($source_url);
-				$ext='.jpeg';
-				if (imagejpeg($userfile, $dir1.$new_name.$ext, $quality)){
-					unlink($source_url);
-				}else{
-					unlink($source_url);
-				}
-			}else{
-				$new_name="";
-				$ext="";
-			} */
+				
 			$ext='.pdf';
 			$data=array(
 				"id_modul"=>$_POST['id_modul'],
